@@ -1,0 +1,5 @@
+package com.my.microservice.currencyexchangeservice;
+
+public class ExchangeValueRepository extends JpaRepository<ExchangeValue, Long> {
+	ExchangeValue findByFromAndTo(String from, String to);
+}
